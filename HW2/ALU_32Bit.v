@@ -1,0 +1,43 @@
+module ALU_32Bit(outp,cout, aluop0, aluop1, aluop2, ai,bi,cin);
+input aluop0, aluop1, aluop2, cin;
+input [31:0]ai;
+input [31:0]bi;
+output [31:0]outp;
+output cout;
+wire set,v;
+wire c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,c31;
+
+ALU_1Bit a1(outp[0],c1, aluop0, aluop1, aluop2, ai[0],bi[0],set, cin);
+ALU_1Bit a2(outp[1],c2, aluop0, aluop1, aluop2, ai[1],bi[1],1'b0, c1);
+ALU_1Bit a3(outp[2],c3,aluop0, aluop1, aluop2, ai[2],bi[2],1'b0, c2);
+ALU_1Bit a4(outp[3],c4, aluop0, aluop1, aluop2, ai[3],bi[3],1'b0, c3);
+ALU_1Bit a5(outp[4],c5, aluop0, aluop1, aluop2, ai[4],bi[4],1'b0, c4);
+ALU_1Bit a6(outp[5],c6, aluop0, aluop1, aluop2, ai[5],bi[5],1'b0, c5);
+ALU_1Bit a7(outp[6],c7, aluop0, aluop1, aluop2, ai[6],bi[6],1'b0, c6);
+ALU_1Bit a8(outp[7],c8, aluop0, aluop1, aluop2, ai[7],bi[7],1'b0, c7);
+ALU_1Bit a9(outp[8],c9, aluop0, aluop1, aluop2, ai[8],bi[8],1'b0, c8);
+ALU_1Bit a10(outp[9],c10, aluop0, aluop1, aluop2, ai[9],bi[9],1'b0, c9);
+ALU_1Bit a11(outp[10],c11, aluop0, aluop1, aluop2, ai[10],bi[10],1'b0, c10);
+ALU_1Bit a12(outp[11],c12, aluop0, aluop1, aluop2, ai[11],bi[11],1'b0, c11);
+ALU_1Bit a13(outp[12],c13, aluop0, aluop1, aluop2, ai[12],bi[12],1'b0, c12);
+ALU_1Bit a14(outp[13],c14,  aluop0, aluop1, aluop2, ai[13],bi[13],1'b0, c13);
+ALU_1Bit a15(outp[14],c15, aluop0, aluop1, aluop2, ai[14],bi[14],1'b0, c14);
+ALU_1Bit a16(outp[15],c16, aluop0, aluop1, aluop2, ai[15],bi[15],1'b0, c15);
+ALU_1Bit a17(outp[16],c17, aluop0, aluop1, aluop2, ai[16],bi[16],1'b0, c16);
+ALU_1Bit a18(outp[17],c18, aluop0, aluop1, aluop2, ai[17],bi[17],1'b0, c17);
+ALU_1Bit a19(outp[18],c19, aluop0, aluop1, aluop2, ai[18],bi[18],1'b0, c18);
+ALU_1Bit a20(outp[19],c20, aluop0, aluop1, aluop2, ai[19],bi[19],1'b0, c19);
+ALU_1Bit a21(outp[20],c21, aluop0, aluop1, aluop2, ai[20],bi[20],1'b0, c20);
+ALU_1Bit a22(outp[21],c22, aluop0, aluop1, aluop2, ai[21],bi[21],1'b0, c21);
+ALU_1Bit a23(outp[22],c23, aluop0, aluop1, aluop2, ai[22],bi[22],1'b0, c22);
+ALU_1Bit a24(outp[23],c24, aluop0, aluop1, aluop2, ai[23],bi[23],1'b0, c23);
+ALU_1Bit a25(outp[24],c25, aluop0, aluop1, aluop2, ai[24],bi[24],1'b0, c24);
+ALU_1Bit a26(outp[25],c26, aluop0, aluop1, aluop2, ai[25],bi[25],1'b0, c25);
+ALU_1Bit a27(outp[26],c27, aluop0, aluop1, aluop2, ai[26],bi[26],1'b0, c26);
+ALU_1Bit a28(outp[27],c28, aluop0, aluop1, aluop2, ai[27],bi[27],1'b0, c27);
+ALU_1Bit a29(outp[28],c29, aluop0, aluop1, aluop2, ai[28],bi[28],1'b0, c28);
+ALU_1Bit a30(outp[29],c30, aluop0, aluop1, aluop2, ai[29],bi[29],1'b0, c29);
+ALU_1Bit a31(outp[30],c31, aluop0, aluop1, aluop2, ai[30],bi[30],1'b0, c30);
+MSBALU_1Bit a32(outp[31],cout, v, set, aluop0, aluop1, aluop2, ai[31],bi[31],1'b0, c31);
+
+endmodule
