@@ -1,0 +1,40 @@
+module mux_2x1_32_bit(outp,d0,d1,s);
+input [31:0]d0;
+input [31:0]d1;
+input s;
+output [31:0]outp;
+
+mux_2x1 m0(outp[0],d0[0],d1[0],s);
+mux_2x1 m1(outp[1],d0[1],d1[1],s);
+mux_2x1 m2(outp[2],d0[2],d1[2],s);
+mux_2x1 m3(outp[3],d0[3],d1[3],s);
+mux_2x1 m4(outp[4],d0[4],d1[4],s);
+mux_2x1 m5(outp[5],d0[5],d1[5],s);
+mux_2x1 m6(outp[6],d0[6],d1[6],s);
+mux_2x1 m7(outp[7],d0[7],d1[7],s);
+mux_2x1 m8(outp[8],d0[8],d1[8],s);
+mux_2x1 m9(outp[9],d0[9],d1[9],s);
+mux_2x1 m10(outp[10],d0[10],d1[10],s);
+mux_2x1 m11(outp[11],d0[11],d1[11],s);
+mux_2x1 m12(outp[12],d0[12],d1[12],s);
+mux_2x1 m13(outp[13],d0[13],d1[13],s);
+mux_2x1 m14(outp[14],d0[14],d1[14],s);
+mux_2x1 m15(outp[15],d0[15],d1[15],s);
+mux_2x1 m16(outp[16],d0[16],d1[16],s);
+mux_2x1 m17(outp[17],d0[17],d1[17],s);
+mux_2x1 m18(outp[18],d0[18],d1[18],s);
+mux_2x1 m19(outp[19],d0[19],d1[19],s);
+mux_2x1 m20(outp[20],d0[20],d1[20],s);
+mux_2x1 m21(outp[21],d0[21],d1[21],s);
+mux_2x1 m22(outp[22],d0[22],d1[22],s);
+mux_2x1 m23(outp[23],d0[23],d1[23],s);
+mux_2x1 m24(outp[24],d0[24],d1[24],s);
+mux_2x1 m25(outp[25],d0[25],d1[25],s);
+mux_2x1 m26(outp[26],d0[26],d1[26],s);
+mux_2x1 m27(outp[27],d0[27],d1[27],s);
+mux_2x1 m28(outp[28],d0[28],d1[28],s);
+mux_2x1 m29(outp[29],d0[29],d1[29],s);
+mux_2x1 m30(outp[30],d0[30],d1[30],s);
+mux_2x1 m31(outp[31],d0[31],d1[31],s);
+
+endmodule
